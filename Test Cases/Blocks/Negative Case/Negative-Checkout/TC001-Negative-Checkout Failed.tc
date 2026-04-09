@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC001-Negative-Checkout Failed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6dcb8511-23e6-4d57-b23e-906c5bd1e2c9</testCaseGuid>
+</TestCaseEntity>

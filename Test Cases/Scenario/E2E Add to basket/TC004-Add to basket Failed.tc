@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC004-Add to basket Failed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1ca22e26-e2f3-4a33-b6e3-ee7dd374c07a</testCaseGuid>
+</TestCaseEntity>
