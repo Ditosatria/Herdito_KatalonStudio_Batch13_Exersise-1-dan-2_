@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>txt_Hello Diallo12 (not Diallo12 Sign out)</name>
+   <name>Txt_ValidasiLogin_Salah</name>
    <tag></tag>
-   <elementGuidId>ffbaad3d-a5bb-4e8b-849e-8cd1323e5ed6</elementGuidId>
+   <elementGuidId>c925de6e-982d-4054-9c6f-c7409daeb2b4</elementGuidId>
+   <imagePath></imagePath>
    <selectorCollection>
       <entry>
+         <key>IMAGE</key>
+         <value></value>
+      </entry>
+      <entry>
          <key>CSS</key>
-         <value>p</value>
+         <value>ul.woocommerce-error > li</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='page-36']/div/div/div/p</value>
+         <value>//div[@id='page-36']/div/div/ul/li</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:text=&quot;Hello Diallo12 (not Diallo12? Sign out)&quot;i</value>
+         <value>internal:text=&quot;Error: The password you entered for the username Diallo12@gmail.com is incorrect&quot;i</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,74 +33,71 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>p</value>
-      <webElementGuid>2cda685a-2b8b-4cae-ba4c-b26a2d0c9921</webElementGuid>
+      <value>li</value>
+      <webElementGuid>9caf52c4-65b5-4de9-b9f6-51d79324d7bf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>
-	Hello Diallo12 (not Diallo12? Sign out)</value>
-      <webElementGuid>f75ed5c1-4e3b-40ff-96bb-996110892c5f</webElementGuid>
+      <value>Error: The password you entered for the username Diallo12@gmail.com is incorrect. Lost your password?</value>
+      <webElementGuid>40d00181-5907-4189-b8e5-1768422c54ca</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;page-36&quot;)/div[@class=&quot;page-content entry-content&quot;]/div[@class=&quot;woocommerce&quot;]/div[@class=&quot;woocommerce-MyAccount-content&quot;]/p[1]</value>
-      <webElementGuid>93ae2615-3150-4e2f-9d82-155b3283b2d8</webElementGuid>
+      <value>id(&quot;page-36&quot;)/div[@class=&quot;page-content entry-content&quot;]/div[@class=&quot;woocommerce&quot;]/ul[@class=&quot;woocommerce-error&quot;]/li[1]</value>
+      <webElementGuid>6301cb32-fe2f-435d-a967-f08849bb7731</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='page-36']/div/div/div/p</value>
-      <webElementGuid>d32c1671-6755-4094-b152-fc4db6b47f03</webElementGuid>
+      <value>//div[@id='page-36']/div/div/ul/li</value>
+      <webElementGuid>95857ff9-cfe9-4e8c-8764-3bd75aa38562</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Logout'])[1]/following::p[1]</value>
-      <webElementGuid>eb59a5b7-a59b-4af1-b0a1-f444bad83c2e</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='₹0.00'])[1]/following::li[1]</value>
+      <webElementGuid>f7764092-f310-49b8-9658-6f1ec4fbee76</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Account Details'])[1]/following::p[1]</value>
-      <webElementGuid>80014292-5e02-4c0f-8644-ee4773ee5025</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Demo Site'])[1]/following::li[2]</value>
+      <webElementGuid>099a69e7-c052-483c-a3b3-5494261b86bc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Hello']/parent::*</value>
-      <webElementGuid>856f1d0e-f262-40d0-9b93-861a5cc46c19</webElementGuid>
+      <value>//*/text()[normalize-space(.)='The password you entered for the username']/parent::*</value>
+      <webElementGuid>9fe4079d-6c33-48aa-93f6-331e169b851c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//p</value>
-      <webElementGuid>aa1e67b0-bd8d-40fe-85b0-aedfeada6b86</webElementGuid>
+      <value>//div/ul/li</value>
+      <webElementGuid>e4331d7a-2e25-48d1-a881-2140162ae806</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//p[(text() = '&#xd;
-	Hello Diallo12 (not Diallo12? Sign out)' or . = '&#xd;
-	Hello Diallo12 (not Diallo12? Sign out)')]</value>
-      <webElementGuid>2897c722-2943-4fad-8b97-5a66544523e6</webElementGuid>
+      <value>//li[(text() = 'Error: The password you entered for the username Diallo12@gmail.com is incorrect. Lost your password?' or . = 'Error: The password you entered for the username Diallo12@gmail.com is incorrect. Lost your password?')]</value>
+      <webElementGuid>1563973d-f7da-4b52-a6fb-8f9de9425710</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

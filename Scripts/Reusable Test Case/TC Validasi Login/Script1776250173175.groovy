@@ -17,9 +17,29 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser(GlobalVariable.GlobalVariable)
+WebUI.callTestCase(findTestCase('Reusable Test Case/Open Browser'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl('https://practice.automationtesting.in/')
+WebUI.click(findTestObject('Page Login/btn_My Account'))
 
-WebUI.maximizeWindow()
+// Input login
+WebUI.setText(findTestObject('Page Login/input__username'), username)
+
+WebUI.setText(findTestObject('Page Login/input__password'), password)
+
+// Klik login
+WebUI.click(findTestObject('Page Login/input__login'))
+
+// Cek apakah dashboard/menu muncul
+boolean isDashboardVisible = WebUI.verifyElementPresent(findTestObject('Page Login/a_Sign out'), 0, FailureHandling.OPTIONAL)
+
+// If else validasi
+if (isDashboardVisible) {
+    WebUI.comment('Login berhasil → masuk ke dashboard')
+
+    WebUI.callTestCase(findTestCase('Blocks/Positive Case/Positive-Checkout/TC001-Checkout'), [('firstname') : firstname
+            , ('lastname') : lastname, ('email') : email, ('phone') : phone, ('address') : address, ('city') : city, ('postcode') : postcode
+            , ('payment') : payment], FailureHandling.STOP_ON_FAILURE)
+} else {
+    String errorMsg = WebUI.getText(findTestObject('Page Login/Txt_ValidasiLogin_Salah'))
+}
 

@@ -17,10 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Reusable Test Case/Open Browser'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Blocks/Positive Case/Positive Login/TC001-Login'), [:], FailureHandling.STOP_ON_FAILURE)
-
 WebUI.click(findTestObject('Object Repository/Page Checkout/btn_Shop'))
 
 WebUI.click(findTestObject('Object Repository/Page Checkout/btn_Add to basket'))
@@ -31,27 +27,44 @@ WebUI.click(findTestObject('Object Repository/Page Checkout/span_2 items'))
 
 WebUI.click(findTestObject('Object Repository/Page Checkout/btn_Proceed to Checkout'))
 
-WebUI.setText(findTestObject('Object Repository/Page Checkout/input__billing_first_name'), 'Diallo')
+WebUI.setText(findTestObject('Object Repository/Page Checkout/input__billing_first_name'), firstname)
 
-WebUI.setText(findTestObject('Object Repository/Page Checkout/input__billing_last_name'), 'Ungs')
+WebUI.setText(findTestObject('Object Repository/Page Checkout/input__billing_last_name'), lastname)
 
 WebUI.setText(findTestObject('Object Repository/Page Checkout/input_Company Name_billing_company'), 'Jakarta')
 
-WebUI.setText(findTestObject('Object Repository/Page Checkout/input__billing_email'), 'Diallo@gmail.com')
+WebUI.setText(findTestObject('Object Repository/Page Checkout/input__billing_email'), email)
 
-WebUI.setText(findTestObject('Object Repository/Page Checkout/input__billing_phone'), '08209109201')
+WebUI.setText(findTestObject('Object Repository/Page Checkout/input__billing_phone'), phone)
 
-WebUI.setText(findTestObject('Object Repository/Page Checkout/input__billing_address_1'), 'Jakarta')
+WebUI.setText(findTestObject('Object Repository/Page Checkout/input__billing_address_1'), address)
 
-WebUI.setText(findTestObject('Object Repository/Page Checkout/input__billing_city'), 'Jakarta')
+WebUI.setText(findTestObject('Object Repository/Page Checkout/input__billing_city'), city)
 
-WebUI.setText(findTestObject('Object Repository/Page Checkout/input__billing_postcode'), '15267')
+WebUI.setText(findTestObject('Object Repository/Page Checkout/input__billing_postcode'), postcode)
 
-WebUI.click(findTestObject('Object Repository/Page Checkout/input_Check Payments_payment_method_cod'))
+select_radio = payment
 
-WebUI.click(findTestObject('Object Repository/Page Checkout/btn_input_PayPal Express Checkout_place_order'))
+switch (select_radio) {
+    case 'Direct Bank Transfer':
+        WebUI.click(findTestObject('Page Checkout/input__payment_method_bacs'))
+
+        break
+    case 'Check Payments':
+        WebUI.click(findTestObject('Page Checkout/input_Direct Bank Transfer_payment_method'))
+
+        break
+    case 'Cash on Delivery':
+        WebUI.click(findTestObject('Page Checkout/input_Check Payments_payment_method'))
+
+        break //	case 'PayPal Express Checkout' :
+        //	WebUI.click(findTestObject('Page Checkout/Input_PayPal'))
+        //	break
+    default:
+        break
+}
+
+WebUI.click(findTestObject('Page Checkout/btn_input_PayPal Express Checkout_place_order'))
 
 WebUI.verifyElementText(findTestObject('Object Repository/Page Checkout/p_Thank you. Your order has been received'), 'Thank you. Your order has been received.')
-
-WebUI.click(findTestObject('Object Repository/Page Checkout/div_Thank you. Your order has been received_5b3152'))
 

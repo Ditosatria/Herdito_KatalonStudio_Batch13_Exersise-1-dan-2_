@@ -17,7 +17,14 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Blocks/Positive Case/Positive-Checkout/TC001-Checkout'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Reusable Test Case/Open Browser'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Blocks/Positive Case/Positive Login/TC001-Login'), [('username') : username, ('password') : password], 
+    FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Blocks/Positive Case/Positive-Checkout/TC001-Checkout'), [('firstname') : firstname, ('lastname') : lastname
+        , ('email') : email, ('phone') : phone, ('address') : address, ('city') : city, ('postcode') : postcode, ('payment') : payment], 
+    FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Reusable Test Case/Close Browser'), [:], FailureHandling.STOP_ON_FAILURE)
 

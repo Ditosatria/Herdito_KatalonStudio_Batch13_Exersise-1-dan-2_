@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
-   <name>TC006-Checkout</name>
+   <description>Validasi Login pada saat Password Salah</description>
+   <name>TC Validasi Login</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>632cb5ff-4976-40fe-857a-e8871fd1f518</testCaseGuid>
+   <testCaseGuid>1aabeaf2-36d7-4a1d-8bdd-30b81b1298aa</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ddb8732b-1f8e-4fc7-8085-d187fd208791</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>70cbe48a-4cd9-4a0f-ac16-c0a823cc5aab</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>61f15de3-1f5e-4017-8774-6129aa31bf1d</variableId>
+   </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
@@ -48,24 +66,27 @@
       <value></value>
       <variableId>f77603c1-b256-4432-bb3c-4b655dd5296b</variableId>
    </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>f2a62747-7078-4f04-bc13-a006d9f7c90b</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>855b0ec1-9e61-4301-bccb-db16ffb170c6</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>a3c6e064-59f2-4e89-89b6-619bb445eb91</variableId>
-   </variableLinks>
+   <variable>
+      <defaultValue>'testing001@gmail.com'</defaultValue>
+      <description></description>
+      <id>ddb8732b-1f8e-4fc7-8085-d187fd208791</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>'@Secret*404'</defaultValue>
+      <description></description>
+      <id>70cbe48a-4cd9-4a0f-ac16-c0a823cc5aab</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>'Direct Bank Transfer'</defaultValue>
+      <description></description>
+      <id>61f15de3-1f5e-4017-8774-6129aa31bf1d</id>
+      <masked>false</masked>
+      <name>payment</name>
+   </variable>
    <variable>
       <defaultValue>'Diallo'</defaultValue>
       <description></description>
@@ -114,26 +135,5 @@
       <id>f77603c1-b256-4432-bb3c-4b655dd5296b</id>
       <masked>false</masked>
       <name>postcode</name>
-   </variable>
-   <variable>
-      <defaultValue>'Direct Bank Transfer'</defaultValue>
-      <description></description>
-      <id>f2a62747-7078-4f04-bc13-a006d9f7c90b</id>
-      <masked>false</masked>
-      <name>payment</name>
-   </variable>
-   <variable>
-      <defaultValue>'Satria01@gmail.com'</defaultValue>
-      <description></description>
-      <id>855b0ec1-9e61-4301-bccb-db16ffb170c6</id>
-      <masked>false</masked>
-      <name>username</name>
-   </variable>
-   <variable>
-      <defaultValue>'@Satria01'</defaultValue>
-      <description></description>
-      <id>a3c6e064-59f2-4e89-89b6-619bb445eb91</id>
-      <masked>false</masked>
-      <name>password</name>
    </variable>
 </TestCaseEntity>
